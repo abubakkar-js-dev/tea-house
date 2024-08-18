@@ -32,7 +32,7 @@
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header -->
-       <header class="flex pt-10 mb-20">
+       <header class="flex flex-col md:flex-row pt-10 mb-20">
         <!-- text content -->
          <div>
           <h1 class="text-5xl md:text-7xl leading-[100px] banner-title">It's good 
@@ -46,7 +46,7 @@
          <!-- image content -->
          <div>
           <!-- image -->
-           <div class="relative">
+           <div class="relative mt-20 md:mt-0">
             <img src="./images/banner.png" alt="banner image">
             <!-- card -->
            <div class="absolute -bottom-7 left-14 flex items-center gap-8 bg-white shadow-lg rounded-lg py-5 px-6">
@@ -61,10 +61,43 @@
            </div>
          </div>
        </header>
+       <!-- featured prodeuct section start -->
+        <section class="mt-[40px] md:mt-[180px] mb-[60px] md:mb-[80px]">
+          <h2 class="text-3xl md:text-5xl mb-7 text-center">Our Featured Products</h2>
+          <p class="mb-10 text-gray-600 md:w-3/4 mx-auto text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+          <!-- card container -->
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- card -->
+             <div class="bg-gray-50 p-7 rounded-md shadow-sm">
+              <img class="mx-auto" src="./images/tea-1.png" alt="Milk tea images">
+              <h3 class="text-2xl mt-7 mb-4 text-center">Lemon Tea</h3>
+              <p class="text-gray-700 text-center">Creamer could be replaced by fresh milk</p>
+             </div>
+            <!-- card -->
+             <div class="bg-gray-50 p-7 rounded-md shadow-sm">
+              <img class="mx-auto" src="./images/tea-2.png" alt="Milk tea images">
+              <h3 class="text-2xl mt-7 mb-4 text-center">Orange Tea</h3>
+              <p class="text-gray-700 text-center">Creamer could be replaced by fresh milk</p>
+             </div>
+            <!-- card -->
+             <div class="bg-gray-50 p-7 rounded-md shadow-sm">
+              <img class="mx-auto" src="./images/tea-3.png" alt="Milk tea images">
+              <h3 class="text-2xl mt-7 mb-4 text-center">Milk Tea</h3>
+              <p class="text-gray-700 text-center">Creamer could be replaced by fresh milk</p>
+             </div>
+            <!-- card -->
+             <div class="bg-gray-50 p-7 rounded-md shadow-sm">
+              <img class="mx-auto" src="./images/tea-4.png" alt="Milk tea images">
+              <h3 class="text-2xl mt-7 mb-4 text-center">Natural Tea</h3>
+              <p class="text-gray-700 text-center">Creamer could be replaced by fresh milk</p>
+             </div>
+           </div>
+        </section>
     </main>
     <!-- footer section -->
-    <footer>
-
+    <footer> 
+      
     </footer>
 
   </body>
