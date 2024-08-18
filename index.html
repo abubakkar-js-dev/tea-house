@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
     <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- my style -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./input.css">
     <!-- fontawesome cdn -->
     <script
       src="https://kit.fontawesome.com/217bc341aa.js"
@@ -26,12 +25,15 @@
             colors: {
               clifford: "#da373d",
             },
+            FontFamily: {
+              'manrope' : '"Manrope", sans-serif',
+           },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <!-- header -->
@@ -289,6 +291,70 @@
        </section>
     </main>
     <!-- footer section -->
-    <footer></footer>
+    <footer class="mx-auto py-[130px] bg-gradient-to-r from-orange-200/50 to-red-200/50">
+      <div class="max-w-screen-xl mx-auto w-10/12 lg:w-full">
+        <div class="flex justify-between mb-28">
+          <!-- logo -->
+           <img src="./images/cup.png" alt="Cup image">
+           <!-- content -->
+            <div class="flex items-center gap-5">
+              <p class="text-gray-600 mr-2 text-xl">Ready to get strated?</p>
+              <button class="px-5 py-3 text-xl bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-white font-bold ">Get Started</button>
+            </div>
+          
+        </div>
+        <!-- links column container -->
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-10">
+           <!-- first column -->
+           <div>
+              <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+              <ul class="space-y-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+           </div>
+           <!-- second column -->
+           <div>
+              <h3 class="text-xl font-semibold mb-6">Our Service</h3>
+              <ul class="space-y-3">
+                <li><a href="#">Life Insurance</a></li>
+                <li><a href="#">Car Insurance</a></li>
+                <li><a href="#">Health Insurance</a></li>
+                <li><a href="#">House Insurance</a></li>
+              </ul>
+            </div>
+            <!-- third column -->
+            <div>
+              <h3 class="text-xl font-semibold mb-6">Help</h3>
+              <ul class="space-y-3">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+              </ul>
+            </div>
+            <!-- fourth column -->
+             <div class="space-y-10">
+                <h2 class="text-3xl">Subscribe to our newsletter</h2>
+                <div>
+                  <input class="bg-transparent border-b-2  border-gray-500 pb-3 focus:outline-none placeholder:text-gray-600" type="email" name="email" id="email" placeholder="Email address">
+                  <button class="px-3 py-1 ml-5  bg-gradient-to-r from-orange-500 to-red-500 rounded-full text-white font-bold"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div class="flex gap-3 mt-2">
+                  <a href="#">
+                    <i class="text-gray-700 text-xl fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="text-gray-700 text-xl fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="text-gray-700 text-xl fa-brands fa-square-instagram"></i>
+                  </a>
+                </div>
+             </div>
+         </div>
+         <p class="text-center mt-20 font-medium text-lg text-gray-700 "> &copy; 2027 UIDesign.to - All rights reserved.</p>
+    </footer>
   </body>
 </html>
