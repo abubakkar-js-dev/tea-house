@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/217bc341aa.js" crossorigin="anonymous"></script>
     <!-- tailwindcss cdn -->
@@ -28,11 +29,43 @@
     </script>
   </head>
   <body>
-    <header>
-        <h2 class="text-3xl text-clifford">Hello This</h2>
-    </header>
-    <main></main>
-    <footer></footer>
+    <!-- main content -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- header -->
+       <header class="flex pt-10 mb-20">
+        <!-- text content -->
+         <div>
+          <h1 class="text-5xl md:text-7xl leading-[100px] banner-title">It's good 
+           <br> tea time at 
+           <br>The Tea House</h1>
+           <p class="text-gray-500 text-lg w-3/4 my-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+           <button class="px-5 py-3 text-lg bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-white font-bold">Explore More 
+            <i class="fa-solid fa-arrow-right -rotate-45 ml-2"></i>
+           </button>
+         </div>
+         <!-- image content -->
+         <div>
+          <!-- image -->
+           <div class="relative">
+            <img src="./images/banner.png" alt="banner image">
+            <!-- card -->
+           <div class="absolute -bottom-7 left-14 flex items-center gap-8 bg-white shadow-lg rounded-lg py-5 px-6">
+            <div class="">
+              <i class="fa-solid fa-star text-2xl text-amber-300"></i>
+            </div>
+            <div>
+              <h3 class="text-3xl font-extrabold text-black mb-1">5.00</h3>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+           </div>
+           </div>
+         </div>
+       </header>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 
   </body>
 </html>
